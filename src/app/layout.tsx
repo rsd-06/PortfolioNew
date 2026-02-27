@@ -4,7 +4,6 @@ import { Inter, Roboto, JetBrains_Mono, Tangerine } from "next/font/google";
 import "./globals.css";
 
 import LenisProvider from "../components/providers/LenisProvider";
-import { tr } from "motion/react-client";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -102,7 +101,9 @@ export const metadata: Metadata = {
     //   { url: '/apple-icon-x3.png', sizes: '180x180', type: 'image/png' },
     // ],
   },
-}
+};
+
+
 
 
 export default function RootLayout({
@@ -122,7 +123,7 @@ export default function RootLayout({
         `}
       >
         <LenisProvider>
-          {children}
+            {children}
         </LenisProvider>
       </body>
     </html>
